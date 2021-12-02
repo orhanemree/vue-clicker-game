@@ -1,24 +1,9 @@
-# clicker-game
+# 🖱️ Vue Clicker Game
+Vue kullanarak geliştirdiğim ilk proje.
 
-## Project setup
-```
-npm install
-```
+<a href="https://oe-vue-clicker-game.netlify.app/">Projeyi görün.</a>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 💻 Neler Kullandım?
+* CSS / SASS
+* JavaScript / Vue.js
+* Firebase
