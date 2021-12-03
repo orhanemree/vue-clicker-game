@@ -41,10 +41,12 @@ export default {
                     if (snapshot.exists()) {
                         this.usernameAlert = "Bu kullanıcı adı kullanılıyor."
                     } else {
+                        const date = new Date()
                         set(ref(db, `users/${this.username}`), {
                             username: this.username,
                             password: this.password,
-                            click: this.$parent.$data.counter
+                            click: this.$parent.$data.counter,
+                            lastSave: date.toString()
                         });
                         console.log("Kullanıcı oluşturuldu.")
                         this.$props.exit()

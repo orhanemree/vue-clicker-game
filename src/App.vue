@@ -62,8 +62,10 @@ export default {
     save(){
       if (this.username !== "Misafir"){
         const db = getDatabase();
+        const date = new Date();
         const updates = {};
         updates[`/users/${this.username}/click`] = this.counter;
+        updates[`/users/${this.username}/lastSave`] = date.toString();
         update(ref(db), updates);
         this.saveWarn = "Kaydedildi";
       } else {
