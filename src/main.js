@@ -2,7 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './assets/styles/css/style.css';
 import { initializeApp } from "firebase/app";
-import * as config from "./config"
+// import * as config from "./config"
+
 
 const options = {
     apiKey: process.env.API_KEY,
@@ -15,12 +16,7 @@ const options = {
     databaseURL: "https://clicker-game-28113-default-rtdb.europe-west1.firebasedatabase.app/",
 }
 
-if (process.env.NODE_ENV === "development"){
-    initializeApp(config.config);
-} else {
-    initializeApp(options);
-}
-
-
+initializeApp(options);
+// initializeApp(config.config);
 
 createApp(App).mount('#app')
