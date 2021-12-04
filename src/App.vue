@@ -80,7 +80,6 @@ export default {
           const data = snapshot.val()
           const dataArray = Object.keys(data).map(val => data[val]);
           this.leaders = dataArray.sort((a, b) => (a.click - b.click)).reverse()
-          console.log(this.leaders)
         }
       });
     }
